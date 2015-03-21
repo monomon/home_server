@@ -1,0 +1,19 @@
+pid file = /home/server_user/home_server/pids/rsync.pid
+log file = /home/server_user/home_server/logs/rsync.log
+lock file = /home/server_user/home_server/locks/rsync.lock
+use chroot = no
+read only = no
+hosts allow = 192.168.1.0/24
+port = 54777
+
+[bird]
+	uid = birdman
+	gid = birdman
+	path = /mnt/backup_drive/birdman
+	comment = "Birdman's space"
+
+[music]
+	uid = nobody
+	gid = nobody
+	path = /mnt/backup_drive/music
+	comment = "Rock on"
