@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rootdir=`pwd`
+rootdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 piddir=$rootdir/pids
 daemonuser=pi
